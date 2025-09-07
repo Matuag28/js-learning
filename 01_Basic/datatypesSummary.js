@@ -1,4 +1,5 @@
-// primitive : String, Number , Boolean, null , undefined, Symbol ,BigInt
+// primitive : 
+// String, Number , Boolean, null , undefined, Symbol ,BigInt
 
 // Dynamic typed language  
 
@@ -20,3 +21,31 @@ let obj={
     age:28
 }
 console.log(typeof obj);
+
+
+// Stack(Primitive) = copy hi milta hai , Heap (Non-Primitive)  = original value milti hai 
+
+let myYtname="gg@gmail.com";
+
+let anotherName=myYtname;
+anotherName="CodeFordDebug"
+
+console.log(anotherName);
+console.log(myYtname);
+
+
+let userOne ={
+    email:"user@gmail.com",
+    id:1
+}
+
+let userTwo=userOne;
+
+console.log(userTwo.id);
+
+userTwo.id=2
+
+console.log(userTwo);
+
+console.log(userOne.email,userOne.id);
+
