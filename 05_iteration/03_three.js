@@ -9,7 +9,7 @@
 // coding.forEach( (item,index,arr)=>{console.log(item,index,arr);
 // })
 
-// if objects in array then thats how we suse forEach loop 
+// if objects in array then thats how we use forEach loop 
 myArray=[{name:"python",extension:"py"},{
     name:"javascript",
     extension:"js"
