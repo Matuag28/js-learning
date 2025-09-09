@@ -1,5 +1,6 @@
 ##  Project 1
 
+## color changing according to box color 
 
 ``` javsSript
 const buttons = document.querySelectorAll('.button');
