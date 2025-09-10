@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <h1>Code</h1>
+    <button id="stop"> Stop</button>
+
+
+    
+</body>
+
+<script>
+    const sayGautam = function (){
+        console.log('Gautam');
+        
+    }
+    const changeTxt = function(){
+        document.querySelector('h1').innerHTML='Best JS series'
+    }
+
+  const changeME = setTimeout(changeTxt,2000)
+  document.querySelector('#stop').addEventListener('click',function (){
+    clearTimeout(changeME)
+    console.log("Stopped");
+    
+  })
+
+</script>
+</html>

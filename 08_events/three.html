@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <h1>Code</h1>
+    <button id="start">Start</button>
+    <button id="stop"> Stop</button>
+
+
+    
+</body>
+
+<script>
+//     const sayGautam = function (){
+//         console.log('Gautam');
+        
+//     }
+//     const changeTxt = function(){
+//         document.querySelector('h1').innerHTML='Best JS series'
+//     }
+
+//   const changeME = setTimeout(changeTxt,2000)
+//   document.querySelector('#stop').addEventListener('click',function (){
+//     clearTimeout(changeME)
+//     console.log("Stopped");
+    
+//   })
+
+
+    const sayDate = function(str){
+        console.log(str,Date.now());
+        
+    }
+
+    
+    const intervalId= setInterval(sayDate,1000,"hi")
+    clearInterval(intervalId)
+
+    document.querySelector('#start').addEventListener('click',function(){
+        console.log(intervalId);
+        console.log('start');
+    })
+
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(intervalId);
+        console.log('stop');
+    })
+
+    // setInterval(function(){
+//     console.log("Gautam");
+    
+// },1000)
+
+
+
+
+
+
+
+
+</script>
+</html>
