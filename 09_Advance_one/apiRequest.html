@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Request</title>
+</head>
+<body style="background-color: #212121;">
+    <h2>Random User Picture</h2>
+<img id="userImage" src="" alt="Random User" />
+    
+</body>
+
+<script>
+    const req='https://randomuser.me/api/'
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET',req)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState===4){
+            const data = JSON.parse(this.responseText);
+            console.log(typeof data);
+            const imageUrl =data.results[0].picture.large;
+            document.getElementById("userImage").src = imageUrl;
+            
+        }
+        
+    };
+
+    xhr.send();
+
+    
+    
+    // console.log('here');
+    
+    xhr.send()
+</script>
+</html>
